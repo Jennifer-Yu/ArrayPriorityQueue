@@ -1,6 +1,6 @@
 public interface PriorityQueue {
 
-    public void add();
+    public void add(int x);
     
     public boolean isEmpty();
 

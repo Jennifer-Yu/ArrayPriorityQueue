@@ -50,10 +50,10 @@ public class ArrayPriorityQueue implements PriorityQueue {
 	} 
 	int champIndex = 0;
 	for (int x = 0; x < pq.size(); x++) {
-	    if (pq.get(x) < champ) {
+	    if (pq.get(x) < champIndex) {
 		champIndex = x;
 	    }
 	}
-	return pq.remove(x);
+	return pq.remove(champIndex);
     }
 }
