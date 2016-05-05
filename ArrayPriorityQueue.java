@@ -48,13 +48,12 @@ public class ArrayPriorityQueue implements PriorityQueue {
 	if (pq.isEmpty()) { 
 	    return -1; 
 	} 
-	int champ = 0;
+	int champIndex = 0;
 	for (int x = 0; x < pq.size(); x++) {
 	    if (pq.get(x) < champ) {
-		champ = pq.get(x);
+		champIndex = x;
 	    }
 	}
-	return champ;
-
-
+	return pq.remove(x);
+    }
 }
